@@ -1,0 +1,183 @@
+/*COMMON STYLE*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Anton&family=Mulish:ital,wght@0,300;0,400;1,200&display=swap');
+
+body {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('./images/photo-1605281317010-fe5ffe798166.jpg') no-repeat center center fixed;
+    background-size: cover;
+    /* background-position: 0 0; */
+    /* background-repeat: no-repeat; */
+    width: 100%;
+    height: 100%;
+}
+
+/*HEADER STYLE*/
+nav {
+    margin: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+.logo-small{
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+ul {
+    display: flex;
+    justify-content: space-between;
+    justify-content: flex-end;
+
+}
+
+li {
+    padding: 20px;
+    list-style-type: none;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: white;
+    font-size: 17px;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+}
+
+.nav-link:hover {
+    transform: scale(1.1);
+    color: black;
+}
+/*MAIN STYLE*/
+#main-page {
+    margin-top: 120px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: 'Anton', sans-serif;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+}
+h2{
+    color: white;
+}
+.subtitle-main-page {
+    font-size: 50px;
+    margin-bottom: 50px;
+    color: white;
+    font-family: 'Allison', cursive;
+}
+
+.main-button {
+    text-decoration: none;
+    color: white;
+    padding: 20px 70px;
+    font-size: 20px;
+    font-family: 'Mulish', sans-serif;
+    cursor: pointer;
+    background-color: rgb(28, 48, 78);
+    border: none;
+}
+
+.main-button:hover {
+    transform: scale(1.1);
+    background-color: rgb(36, 34, 34);
+    color: white;
+    border: none;
+}
+
+/* How to.. */
+
+.main-tutorial {
+    color: white;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; */
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 100px;
+    width: 90%;
+}
+.part-1{
+    text-align: center;
+}
+h2 {
+    font-family: 'Anton', sans-serif;
+    margin-bottom: 10px;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.subtitle-tutorial {
+    font-family: 'Mulish', sans-serif;
+    margin-bottom: 10px;
+    margin-top: 20px;
+}
+
+.video {
+    width: 90%;
+    margin-top: 40px;
+
+}
+
+
+
+@media all and (min-width: 750px) {
+
+    .nav-link {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    #main-page {
+        text-align: left;
+        margin-left: 5%;
+    }
+
+    #booking {
+        margin-top: 20%;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+
+    #wrapper {
+        display: table;
+        width: 100%;
+        height: 100%;
+        margin-top: 200px;
+    }
+
+    .main-tutorial {
+        color: white;
+        /* display: flex;
+       flex-direction: column; */
+        margin-top: 100px;
+        margin: 20px;
+    
+    }
+    
+    h2 {
+        font-family: 'Anton', sans-serif;
+        margin-bottom: 10px;
+        font-weight: normal;
+        letter-spacing: 1px;
+    }
+    
+    .subtitle-tutorial {
+        font-family: 'Mulish', sans-serif;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .video{
+        max-width: 1000px;
+        height: 500px;
+    }
+}
